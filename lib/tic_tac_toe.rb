@@ -122,3 +122,5 @@ end
     end
   end
 end  
+
+TicTacToe.new 
