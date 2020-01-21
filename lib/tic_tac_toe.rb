@@ -53,57 +53,6 @@ def play
     puts "-----------"
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
-
-  def over?
-    won? || draw?
-  end
-
-  def won?
-    a = WIN_COMBINATIONS.find{
-      |combo|
-      @board[combo[0]] == "X" && @board[combo[1]] == "X" && @board[combo[2]] == "X"
-    }
-    b = WIN_COMBINATIONS.find{
-      |combo|
-      @board[combo[0]] == "O" && @board[combo[1]] == "O" && @board[combo[2]] == "O"
-    }
-    return a || b
-  end
-
-  WIN_COMBINATIONS = [
-    Board layout
-    0 | 1 | 2
-    -----------
-    3 | 4 | 5
-    -----------
-    6 | 7 | 8
-
-    [0,1,2], # Top row
-    [3,4,5],  # Middle row
-    [6,7,8],  # Bottom row
-    [0,3,6],  # Left col
-    [1,4,7],  # Middle col
-    [2,5,8],  # Right col
-    [0,4,8],  # Diagnol 1
-    [2,4,6]  # Diagnol 2
-  ]
-
-  def draw?
-    !won? && full?
-  end
-
-  def full?
-    !@board.any?{|x| x == "" || x == " "}
-  end
-
-  def winner
-    if won?
-      @board[won?[0]] == "X" ? "X" : "O"
-    else
-      nil
-    end
-  end
-
 end
 
 
