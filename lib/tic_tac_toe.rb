@@ -87,12 +87,11 @@ class TicTacToe
     elsif draw?
       puts "Cat's Game!"
     end
-      
-      def new_game 
-        new_game = game.new 
-      end 
+    
+    def new_game
+      new_game = game 
+    end 
   end
 end
  
-  
-new_game = TicTacToe.new 
+ 
