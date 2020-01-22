@@ -94,6 +94,7 @@ class TicTacToe
        puts "would you like to start a new game"
      end 
    end 
+   game.new = TicTacToe.new 
   end
 end
  
