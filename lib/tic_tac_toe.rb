@@ -11,7 +11,7 @@ class TicTacToe
   ]
   def initialize()
     @board =  Array.new(9," ")
-  end
+  end0
   def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
@@ -86,12 +86,14 @@ class TicTacToe
       puts "Congratulations #{winner}!"
     elsif draw?
       puts "Cat's Game!"
-    end
-    
-    def new_game
-      new_game = game 
     end 
+    def start_new_game
+     if game_over 
+       puts "start new game"
+       elsif 
+       puts "would you like to start a new game"
+     end 
+   end 
   end
 end
- new_game = TicTacToe.new 
  
