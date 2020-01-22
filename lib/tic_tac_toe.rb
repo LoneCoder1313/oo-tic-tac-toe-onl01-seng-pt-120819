@@ -88,5 +88,6 @@ class TicTacToe
       puts "Cat's Game!"
     end
 
+  def new
   end
 end
