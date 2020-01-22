@@ -87,7 +87,6 @@ class TicTacToe
     elsif draw?
       puts "Cat's Game!"
     end 
-   game = TicTacToe.new 
   end
 end
  
