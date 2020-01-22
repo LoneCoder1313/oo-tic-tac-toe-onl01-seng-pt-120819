@@ -93,5 +93,5 @@ class TicTacToe
     end 
   end
 end
- 
+ new_game = TicTacToe.new 
  
