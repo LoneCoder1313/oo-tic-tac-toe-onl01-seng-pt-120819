@@ -88,7 +88,5 @@ class TicTacToe
       puts "Cat's Game!"
     end
 
-  def new_game 
-    @new_game = TicTacToe.new 
   end
 end
