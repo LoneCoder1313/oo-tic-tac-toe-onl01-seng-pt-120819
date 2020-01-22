@@ -87,9 +87,6 @@ class TicTacToe
     elsif draw?
       puts "Cat's Game!"
     end 
-    def new_game 
-      @game = new_game
-   end 
    game = TicTacToe.new 
   end
 end
